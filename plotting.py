@@ -23,5 +23,7 @@ for x in range(0,9):
 
 plt.plot([1,2,3,4])
 plt.ylabel('temperature')
-plt.show()
 
+#used to get graph to show, click enter to get rid of it 
+plt.show(block=False)
+input('press <ENTER> to continue')
