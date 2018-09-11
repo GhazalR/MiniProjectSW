@@ -1,5 +1,5 @@
 import random
-
+import matplotlib.pyplot as plt
 #arrays for humidity and temperature for the three homes
 humiditylist = [0,0,0]
 templist = [60,60,60]
@@ -21,6 +21,7 @@ for x in range(0,9):
     else:
         counter = 0
 
-print(templist)
+plt.plot([1,2,3,4])
+plt.ylabel('temperature')
+plt.show()
 
-#can i see this
