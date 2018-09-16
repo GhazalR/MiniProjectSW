@@ -11,10 +11,7 @@ class house:
     hum = 0
     temp_hist = []
     hum_hist = []
-    def append_temp(t):
-        temp_hist.append(t)
-    def append_hum(h):
-        hum_hist.append(h)
+
 
 Home1 = house()
 Home2 = house()
@@ -48,10 +45,11 @@ f""" or x in range(0,9):
         counter +=1
     else:
         counter = 0
-
-plt.plot([1,2,3,4])
+"""
+list = [2,3,4,5]
+plt.plot(list)
 plt.ylabel('temperature')
 
 #used to get graph to show, click enter to get rid of it 
 plt.show(block=False)
-input('press <ENTER> to continue') """
+input('press <ENTER> to continue')
