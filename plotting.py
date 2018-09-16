@@ -1,5 +1,11 @@
 import random
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt, mpld3
+
+"""plt.plot([3,1,4,1,5], 'ks-', mec='w', mew=5, ms=20)
+mpld3.show()
+"""
+
+
 #arrays for humidity and temperature for the three homes
 humiditylist = [0,0,0]
 templist = [60,60,60]
@@ -35,8 +41,7 @@ counter = 0
 
 #makes sure only incrementing one of the three temperatures
 
-f""" or x in range(0,9):
-    print(counter)
+for x in range(0,9):
     if templist[counter] <=75:
         templist[counter] +=1
     else:
@@ -45,7 +50,7 @@ f""" or x in range(0,9):
         counter +=1
     else:
         counter = 0
-"""
+
 list = [2,3,4,5]
 plt.plot(list)
 plt.ylabel('temperature')
@@ -53,3 +58,4 @@ plt.ylabel('temperature')
 #used to get graph to show, click enter to get rid of it 
 plt.show(block=False)
 input('press <ENTER> to continue')
+"""
