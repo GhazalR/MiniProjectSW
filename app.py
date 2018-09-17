@@ -21,7 +21,7 @@ class Auth:
     CLIENT_ID = ('906365501211-855a4sktfe0isgs5on4t6ep46n5b2bu1.apps.googleusercontent.com'
 )
     CLIENT_SECRET = 'Jon-v9rPIaswzXrU096umuCQy'
-    REDIRECT_URI = 'https://ghazalr.github.io/MiniProjectSW/'
+    REDIRECT_URI = 'http://localhost:5000/gCallback'
     AUTH_URI = 'https://accounts.google.com/o/oauth2/auth'
     TOKEN_URI = 'https://accounts.google.com/o/oauth2/token'
     USER_INFO = 'https://www.googleapis.com/userinfo/v2/me'
@@ -113,41 +113,7 @@ def login():
 
 @app.route('/gCallback')
 def callback():
-    if current_user is not None and current_user.is_authenticated:
-        return redirect(url_for('index'))
-    if 'error' in request.args:
-        if request.args.get('error') == 'access_denied':
-            return 'You denied access.'
-        return 'Error encountered.'
-    if 'code' not in request.args and 'state' not in request.args:
-        return redirect(url_for('login'))
-    else:
-        google = get_google_auth(state=session['oauth_state'])
-        try:
-            token = google.fetch_token(
-                Auth.TOKEN_URI,
-                client_secret=Auth.CLIENT_SECRET,
-                authorization_response=request.url)
-        except HTTPError:
-            return 'HTTPError occurred.'
-        google = get_google_auth(token=token)
-        resp = google.get(Auth.USER_INFO)
-        if resp.status_code == 200:
-            user_data = resp.json()
-            email = user_data['email']
-            user = User.query.filter_by(email=email).first()
-            if user is None:
-                user = User()
-                user.email = email
-            user.name = user_data['name']
-            print(token)
-            user.tokens = json.dumps(token)
-            user.avatar = user_data['picture']
-            db.session.add(user)
-            db.session.commit()
-            login_user(user)
-            return redirect(url_for('index'))
-        return 'Could not fetch your information.'
+    return render_template('sources.html')
 
 
 @app.route('/logout')
