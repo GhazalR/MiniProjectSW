@@ -64,7 +64,7 @@ def view_do_something():
         time_hum = [7,8,9]
         #makes sure only incrementing one of the three temperatures
 
-        for x in range(0,len(templist)):
+        for y in range(0,len(templist)):
             if templist[counter] <=75:
                 templist[counter] +=1
             else:
