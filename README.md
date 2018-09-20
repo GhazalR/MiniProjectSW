@@ -33,7 +33,7 @@ localhost:5000
 With SQLAlchemy, a database is created with the current users. While the server is running on localhost, any users that login are stored in the database.
 
 
-Links Referenced:
+Links Referenced:</br>
 https://mpld3.github.io/quickstart.html
 </br>
 https://stackoverflow.com/questions/23656552/html-button-to-run-python-function
