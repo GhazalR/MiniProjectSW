@@ -230,7 +230,6 @@ def view_do_something():
         plt.subplot(221)
         plt.title('Temperature vs Time - Sensor 2')
         plt.subplot(221).set_ylabel('Temperature (F)')
-        #plt.suptitle('Living Room Sensors', fontsize = 16)
         plt.plot(time_temp,templist)
 
         plt.subplot(222)
