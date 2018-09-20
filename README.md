@@ -31,7 +31,7 @@ localhost:5000
 </br>
 # Description
 With SQLAlchemy, a database is created with the current users. </br>
-Test Cases: While the server is running on localhost, any user that logs in is stored in the database. Therefore, the app can accomdate multiple users at the same time
+<b>Test Cases:</b> While the server is running on localhost, any user that logs in is stored in the database. Therefore, the app can accomdate multiple users at the same time
 
 
 Links Referenced:</br>
