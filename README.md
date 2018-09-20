@@ -13,6 +13,10 @@ To install them,
   pip install sql-alchemy
 </code>
 </br>
+<code>
+  pip install mpld3
+</code>
+</br>
 Then run the app.py file
 </br>
 <code>
