@@ -20,22 +20,7 @@ class house:
     temp_hist = []
     hum_hist = []
 
-"""
-Home1 = house()
-Home2 = house()
-Home3 = house()
 
-Home1.owner = "Biagio"
-Home2.owner = "Ghazal"
-
-Home1.temp = random.uniform(50,80)
-Home2.temp = random.uniform(50,80)
-
-print(Home1.owner)
-print(Home2.owner)
-print(Home1.temp)
-print(Home2.temp)
-"""
 
 counter = 0
 counter2 = 0
