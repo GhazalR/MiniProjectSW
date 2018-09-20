@@ -1,5 +1,5 @@
 # MiniProjectSW
-<text> Using flask and google authorization, we built a python based web application to monitor temperature of multiple user defined sources
+<text> Using flask and google console for authentication, we built a python based web application to monitor temperature of multiple user defined sources
 In order to use this app, you need to have flask, and flask-sqlalchemy installed.
 </text>
 </br>
