@@ -28,3 +28,6 @@ The current web app can be accessed at your localhost port 5000. To do that open
 <code>
 localhost:5000
 </code>
+</br>
+# Description
+With SQLAlchemy, a database is created with the current users. While the server is running on localhost, any users that login are stored in the database.
