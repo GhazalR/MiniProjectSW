@@ -35,6 +35,9 @@ With SQLAlchemy, a database is created with the current users. While the server 
 
 Links Referenced:
 https://mpld3.github.io/quickstart.html
+</br>
 https://stackoverflow.com/questions/23656552/html-button-to-run-python-function
+</br>
 http://flask.pocoo.org/docs/1.0/
+</br>
 https://medium.com/@bittu/add-google-oauth2-login-in-your-flask-web-app-9f455695341e
