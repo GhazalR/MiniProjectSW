@@ -37,7 +37,7 @@ Contributions Breakdown:
 </br>
 Biagio: Created sensor simulations, wrote plotting code, designed HTML site for Sensor display
 </br>
-Ghazal:
+Ghazal: Created the authentication web pages, the database, and connected it all with server.
 
 Links Referenced:</br>
 https://mpld3.github.io/quickstart.html
