@@ -190,13 +190,13 @@ def view_do_something():
 
         plt.figure(1)
         plt.subplot(211)
-        plt.title('Temperature vs Time Sensor 1')
+        plt.title('Temperature vs Time - Sensor 1')
         plt.subplot(211).set_ylabel('Temperature (F)')
         #plt.suptitle('Living Room Sensors', fontsize = 16)
         plt.plot(time_temp,templist)
 
         plt.subplot(212)
-        plt.title('Humidity % vs Time Sensor 1')
+        plt.title('Humidity % vs Time - Sensor 1')
         plt.subplot(212).set_ylabel('Humidity (%)')
         plt.plot(time_hum,humiditylist)
 
@@ -231,13 +231,13 @@ def view_do_something():
 
         plt.figure(2)
         plt.subplot(221)
-        plt.title('Temperature vs Time Sensor 2')
+        plt.title('Temperature vs Time - Sensor 2')
         plt.subplot(221).set_ylabel('Temperature (F)')
         #plt.suptitle('Living Room Sensors', fontsize = 16)
         plt.plot(time_temp,templist)
 
         plt.subplot(222)
-        plt.title('Humidity % vs Time Sensor 2')
+        plt.title('Humidity % vs Time - Sensor 2')
         plt.subplot(222).set_ylabel('Humidity (%)')
         plt.plot(time_hum,humiditylist)
 
