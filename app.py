@@ -192,20 +192,17 @@ def view_do_something():
         plt.subplot(211)
         plt.title('Temperature vs Time - Sensor 1')
         plt.subplot(211).set_ylabel('Temperature (F)')
-        #plt.suptitle('Living Room Sensors', fontsize = 16)
         plt.plot(time_temp,templist)
 
         plt.subplot(212)
         plt.title('Humidity % vs Time - Sensor 1')
         plt.subplot(212).set_ylabel('Humidity (%)')
         plt.plot(time_hum,humiditylist)
-
         plt.subplots_adjust(left=.125, right = .9,  bottom=.05, top=.9, wspace=.2, hspace=.2)
 
         mpld3.show()
         return "OK"
     if request.method == 'POST2':
-        #your database process here
         humiditylist = [0,0,0,0,0,0,0]
         templist = [60,61,65,64,63,63,62]
         counter = 0
